@@ -43,7 +43,8 @@ def generate_a_samplesound(duration,fs=192000, shape='linear',
             
             background_noise : float. background noise level in decibels. 
                                Defaults to -80 dB rms of white noise.  
-            
+            fullrec_durn : float. Duration of whole audio clip. Defaults to 
+                            10ms if not specified
             
         
     Returns:
@@ -53,10 +54,14 @@ def generate_a_samplesound(duration,fs=192000, shape='linear',
                       and sampling rate.
                              
     '''
+    if 'fullrec_durn' not in kwargs.keys():
+        nsamples_fullrec = int(fs*0.010)        
+    else:
+        nsamples_fullrec = int(fs*kwargs['fullrec_durn'])
         
-    nsamples_10ms = int(fs*0.010)
+    
     nsamples_chirp = int(fs*duration)
-    samplesound = np.zeros(nsamples_10ms)
+    samplesound = np.zeros(nsamples_fullrec)
 
     if not 'background_noise' in kwargs.keys():
         background_noise = -80
@@ -65,7 +70,7 @@ def generate_a_samplesound(duration,fs=192000, shape='linear',
         background_noise = kwargs['background_noise']
         backg_noise_linear = 10.0**(background_noise/20.0)
     
-    samplesound += np.random.normal(0,backg_noise_linear, nsamples_10ms)
+    samplesound += np.random.normal(0,backg_noise_linear, nsamples_fullrec)
 
     t = np.linspace(0, duration, nsamples_chirp)        
     chirp = signal.chirp(t, freqs[0], t[-1], freqs[1], method=shape)
@@ -75,7 +80,7 @@ def generate_a_samplesound(duration,fs=192000, shape='linear',
     chirp_rmsadj = adjust_rms_to_targetSNR(SNR, background_noise, chirp)
 
     # insert the rms adjusted chirp into the snippet w background noise
-    max_allowed_startind = nsamples_10ms - nsamples_chirp
+    max_allowed_startind = nsamples_fullrec - nsamples_chirp
     start_index = int(np.random.choice(range(max_allowed_startind),1))
    
     samplesound[start_index:start_index+chirp.size] += chirp_rmsadj
@@ -164,7 +169,7 @@ def mean_subtract_rowwise(input_array):
 
 if __name__ == '__main__':
     y = generate_a_samplesound(0.001,fs=192000, freqs=[30000, 50000],
-                               background_noise=-10, SNR=-3)
+                               background_noise=-10, SNR=-3, fullrec_durn=0.005)
     
     z = generate_noise_as_samplesound(-15)
     plt.figure(figsize=(8,6))
