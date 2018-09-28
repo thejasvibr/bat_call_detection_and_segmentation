@@ -169,9 +169,10 @@ def mean_subtract_rowwise(input_array):
 
 if __name__ == '__main__':
     y = generate_a_samplesound(0.001,fs=192000, freqs=[30000, 50000],
-                               background_noise=-10, SNR=-3, fullrec_durn=0.005)
+                               background_noise=-10, SNR=-3, 
+                               fullrec_durn=0.005)
     
-    z = generate_noise_as_samplesound(-15)
+    z = generate_noise_as_samplesound(-15, nsamples = int(192000*0.005))
     plt.figure(figsize=(8,6))
     s,f,t,im = plt.specgram(y, NFFT=64, noverlap=14, Fs=192000, cmap='Greys');
     plt.imshow(20*np.log10(mean_subtract_rowwise(s)), cmap='Greys')
