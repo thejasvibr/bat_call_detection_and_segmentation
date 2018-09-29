@@ -102,6 +102,11 @@ def generate_noise_as_samplesound(noise_dBrms, **kwargs):
    
             nsamples: intger. Number of samples the output noise signal should be. 
                      Defaults to 1920.
+            
+            filter_freqs : list with [lower_freq, higher_freq]. 
+                         The band pass filtering that needs to be done.
+
+            fs : int. Sampling rate in Hz. Defaults to 192kHz. 
 
     Returns:
 
@@ -111,10 +116,26 @@ def generate_noise_as_samplesound(noise_dBrms, **kwargs):
         nsamples = 1920
     else : 
         nsamples = kwargs['nsamples']
+    
+    if not 'fs' in kwargs.keys():
+        fs = 192000.0
+    else:
+        fs = float(kwargs['fs'])
+
 
     rms_linear = 10**(noise_dBrms/20.0)
     noise_sound = np.random.normal(0, rms_linear, nsamples)
-    return(noise_sound)
+    if not 'filter_freqs' in kwargs.keys():        
+        return(noise_sound)
+    else:
+        filter_freqs = np.array(kwargs['filter_freqs'])/fs
+        b,a = signal.butter(4,filter_freqs,'bandpass' )
+        bp_noise = signal.filtfilt(b,a, noise_sound)
+        #adjust the rms back to the rms_linear 
+        dBrmsadj_bpnoise = 20*np.log10(rms(bp_noise)) 
+        gain_to_target = noise_dBrms - dBrmsadj_bpnoise
+        bp_noise *= 10.0**(gain_to_target/20.0)
+        return(bp_noise, filter_freqs)
     
 
 def timescramble_spectrogram_array():
@@ -168,12 +189,13 @@ def mean_subtract_rowwise(input_array):
 
 
 if __name__ == '__main__':
-    y = generate_a_samplesound(0.001,fs=192000, freqs=[30000, 50000],
-                               background_noise=-10, SNR=-3, 
-                               fullrec_durn=0.005)
-    
-    z = generate_noise_as_samplesound(-15, nsamples = int(192000*0.005))
-    plt.figure(figsize=(8,6))
-    s,f,t,im = plt.specgram(y, NFFT=64, noverlap=14, Fs=192000, cmap='Greys');
-    plt.imshow(20*np.log10(mean_subtract_rowwise(s)), cmap='Greys')
-    
+    #    y = generate_a_samplesound(0.001,fs=192000, freqs=[30000, 50000],
+    #                               background_noise=-10, SNR=-3, 
+    #                               fullrec_durn=0.005)
+    #    
+    #    z = generate_noise_as_samplesound(-15, nsamples = int(192000*0.005))
+    #    plt.figure(figsize=(8,6))
+    #    s,f,t,im = plt.specgram(y, NFFT=64, noverlap=14, Fs=192000, cmap='Greys');
+    #    plt.imshow(20*np.log10(mean_subtract_rowwise(s)), cmap='Greys')
+
+    q,a=generate_noise_as_samplesound(-20,filter_freqs=[10000,50000])
