@@ -11782,7 +11782,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[231]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">keras</span> 
@@ -11796,10 +11796,30 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/tbeleyur/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[232]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># load a single channel &#39;busy&#39; recording : </span>
@@ -11812,10 +11832,29 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/tbeleyur/anaconda2/lib/python2.7/site-packages/scipy/io/wavfile.py:273: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  WavFileWarning)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[233]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> notebook
@@ -11828,7 +11867,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[234]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -11854,10 +11893,10 @@ div#notebook {
 
 
 
-<div id="3bf905ff-cad7-4aca-98ed-e6909f3765e8"></div>
+<div id="283fcaaf-2dd3-4111-9571-060203d51c7d"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#3bf905ff-cad7-4aca-98ed-e6909f3765e8');
+var element = $('#283fcaaf-2dd3-4111-9571-060203d51c7d');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -12414,7 +12453,7 @@ mpl.figure.prototype.toolbar_button_onmouseover = function(tooltip) {
 };
 mpl.toolbar_items = [["Home", "Reset original view", "fa fa-home icon-home", "home"], ["Back", "Back to  previous view", "fa fa-arrow-left icon-arrow-left", "back"], ["Forward", "Forward to next view", "fa fa-arrow-right icon-arrow-right", "forward"], ["", "", "", ""], ["Pan", "Pan axes with left mouse, zoom with right", "fa fa-arrows icon-move", "pan"], ["Zoom", "Zoom to rectangle", "fa fa-square-o icon-check-empty", "zoom"], ["", "", "", ""], ["Download", "Download plot", "fa fa-floppy-o icon-save", "download"]];
 
-mpl.extensions = ["eps", "pdf", "png", "ps", "raw", "svg"];
+mpl.extensions = ["eps", "jpeg", "pdf", "png", "ps", "raw", "svg", "tif"];
 
 mpl.default_extension = "png";var comm_websocket_adapter = function(comm) {
     // Create a "websocket"-like object which calls the given IPython comm
@@ -12651,7 +12690,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[235]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># let&#39;s take only part of the recording so we can visualise the waveform and spectrograms in detail : </span>
@@ -12679,10 +12718,10 @@ if (IPython.notebook.kernel != null) {
 
 
 
-<div id="a09ec908-40ed-4d99-9be6-1bcb81c1832c"></div>
+<div id="76fcec57-79c1-4712-8def-0a0cf85cfb02"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#a09ec908-40ed-4d99-9be6-1bcb81c1832c');
+var element = $('#76fcec57-79c1-4712-8def-0a0cf85cfb02');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -13239,7 +13278,7 @@ mpl.figure.prototype.toolbar_button_onmouseover = function(tooltip) {
 };
 mpl.toolbar_items = [["Home", "Reset original view", "fa fa-home icon-home", "home"], ["Back", "Back to  previous view", "fa fa-arrow-left icon-arrow-left", "back"], ["Forward", "Forward to next view", "fa fa-arrow-right icon-arrow-right", "forward"], ["", "", "", ""], ["Pan", "Pan axes with left mouse, zoom with right", "fa fa-arrows icon-move", "pan"], ["Zoom", "Zoom to rectangle", "fa fa-square-o icon-check-empty", "zoom"], ["", "", "", ""], ["Download", "Download plot", "fa fa-floppy-o icon-save", "download"]];
 
-mpl.extensions = ["eps", "pdf", "png", "ps", "raw", "svg"];
+mpl.extensions = ["eps", "jpeg", "pdf", "png", "ps", "raw", "svg", "tif"];
 
 mpl.default_extension = "png";var comm_websocket_adapter = function(comm) {
     // Create a "websocket"-like object which calls the given IPython comm
@@ -13476,7 +13515,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[236]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">S</span><span class="o">.</span><span class="n">shape</span>
@@ -13492,7 +13531,7 @@ if (IPython.notebook.kernel != null) {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[236]:</div>
+<div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13509,7 +13548,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[237]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="mi">2999</span><span class="o">/</span><span class="mf">59.0</span>
@@ -13525,7 +13564,7 @@ if (IPython.notebook.kernel != null) {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[237]:</div>
+<div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13542,7 +13581,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[238]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Now let&#39;s split the whole spectrogram into tinier 10ms segments, which is what the network was trained </span>
@@ -13567,7 +13606,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[239]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">normalise_wref_tomax</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -13582,7 +13621,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[240]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># And now let&#39;s do the band-wise mean subtraction like we did before:</span>
@@ -13599,845 +13638,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[241]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># just to show the effect of band-mean subtraction</span>
-<span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">211</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">many_10msclips</span><span class="p">[</span><span class="n">i</span><span class="p">,:,:])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">212</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">many10msclips_meansub</span><span class="p">[</span><span class="n">i</span><span class="p">,:,:])</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-
-<div id="08835333-9e8c-4e60-ae39-0180d6293852"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#08835333-9e8c-4e60-ae39-0180d6293852');
-/* Put everything inside the global mpl namespace */
-window.mpl = {};
-
-
-mpl.get_websocket_type = function() {
-    if (typeof(WebSocket) !== 'undefined') {
-        return WebSocket;
-    } else if (typeof(MozWebSocket) !== 'undefined') {
-        return MozWebSocket;
-    } else {
-        alert('Your browser does not have WebSocket support.' +
-              'Please try Chrome, Safari or Firefox ≥ 6. ' +
-              'Firefox 4 and 5 are also supported but you ' +
-              'have to enable WebSockets in about:config.');
-    };
-}
-
-mpl.figure = function(figure_id, websocket, ondownload, parent_element) {
-    this.id = figure_id;
-
-    this.ws = websocket;
-
-    this.supports_binary = (this.ws.binaryType != undefined);
-
-    if (!this.supports_binary) {
-        var warnings = document.getElementById("mpl-warnings");
-        if (warnings) {
-            warnings.style.display = 'block';
-            warnings.textContent = (
-                "This browser does not support binary websocket messages. " +
-                    "Performance may be slow.");
-        }
-    }
-
-    this.imageObj = new Image();
-
-    this.context = undefined;
-    this.message = undefined;
-    this.canvas = undefined;
-    this.rubberband_canvas = undefined;
-    this.rubberband_context = undefined;
-    this.format_dropdown = undefined;
-
-    this.image_mode = 'full';
-
-    this.root = $('<div/>');
-    this._root_extra_style(this.root)
-    this.root.attr('style', 'display: inline-block');
-
-    $(parent_element).append(this.root);
-
-    this._init_header(this);
-    this._init_canvas(this);
-    this._init_toolbar(this);
-
-    var fig = this;
-
-    this.waiting = false;
-
-    this.ws.onopen =  function () {
-            fig.send_message("supports_binary", {value: fig.supports_binary});
-            fig.send_message("send_image_mode", {});
-            if (mpl.ratio != 1) {
-                fig.send_message("set_dpi_ratio", {'dpi_ratio': mpl.ratio});
-            }
-            fig.send_message("refresh", {});
-        }
-
-    this.imageObj.onload = function() {
-            if (fig.image_mode == 'full') {
-                // Full images could contain transparency (where diff images
-                // almost always do), so we need to clear the canvas so that
-                // there is no ghosting.
-                fig.context.clearRect(0, 0, fig.canvas.width, fig.canvas.height);
-            }
-            fig.context.drawImage(fig.imageObj, 0, 0);
-        };
-
-    this.imageObj.onunload = function() {
-        fig.ws.close();
-    }
-
-    this.ws.onmessage = this._make_on_message_function(this);
-
-    this.ondownload = ondownload;
-}
-
-mpl.figure.prototype._init_header = function() {
-    var titlebar = $(
-        '<div class="ui-dialog-titlebar ui-widget-header ui-corner-all ' +
-        'ui-helper-clearfix"/>');
-    var titletext = $(
-        '<div class="ui-dialog-title" style="width: 100%; ' +
-        'text-align: center; padding: 3px;"/>');
-    titlebar.append(titletext)
-    this.root.append(titlebar);
-    this.header = titletext[0];
-}
-
-
-
-mpl.figure.prototype._canvas_extra_style = function(canvas_div) {
-
-}
-
-
-mpl.figure.prototype._root_extra_style = function(canvas_div) {
-
-}
-
-mpl.figure.prototype._init_canvas = function() {
-    var fig = this;
-
-    var canvas_div = $('<div/>');
-
-    canvas_div.attr('style', 'position: relative; clear: both; outline: 0');
-
-    function canvas_keyboard_event(event) {
-        return fig.key_event(event, event['data']);
-    }
-
-    canvas_div.keydown('key_press', canvas_keyboard_event);
-    canvas_div.keyup('key_release', canvas_keyboard_event);
-    this.canvas_div = canvas_div
-    this._canvas_extra_style(canvas_div)
-    this.root.append(canvas_div);
-
-    var canvas = $('<canvas/>');
-    canvas.addClass('mpl-canvas');
-    canvas.attr('style', "left: 0; top: 0; z-index: 0; outline: 0")
-
-    this.canvas = canvas[0];
-    this.context = canvas[0].getContext("2d");
-
-    var backingStore = this.context.backingStorePixelRatio ||
-	this.context.webkitBackingStorePixelRatio ||
-	this.context.mozBackingStorePixelRatio ||
-	this.context.msBackingStorePixelRatio ||
-	this.context.oBackingStorePixelRatio ||
-	this.context.backingStorePixelRatio || 1;
-
-    mpl.ratio = (window.devicePixelRatio || 1) / backingStore;
-
-    var rubberband = $('<canvas/>');
-    rubberband.attr('style', "position: absolute; left: 0; top: 0; z-index: 1;")
-
-    var pass_mouse_events = true;
-
-    canvas_div.resizable({
-        start: function(event, ui) {
-            pass_mouse_events = false;
-        },
-        resize: function(event, ui) {
-            fig.request_resize(ui.size.width, ui.size.height);
-        },
-        stop: function(event, ui) {
-            pass_mouse_events = true;
-            fig.request_resize(ui.size.width, ui.size.height);
-        },
-    });
-
-    function mouse_event_fn(event) {
-        if (pass_mouse_events)
-            return fig.mouse_event(event, event['data']);
-    }
-
-    rubberband.mousedown('button_press', mouse_event_fn);
-    rubberband.mouseup('button_release', mouse_event_fn);
-    // Throttle sequential mouse events to 1 every 20ms.
-    rubberband.mousemove('motion_notify', mouse_event_fn);
-
-    rubberband.mouseenter('figure_enter', mouse_event_fn);
-    rubberband.mouseleave('figure_leave', mouse_event_fn);
-
-    canvas_div.on("wheel", function (event) {
-        event = event.originalEvent;
-        event['data'] = 'scroll'
-        if (event.deltaY < 0) {
-            event.step = 1;
-        } else {
-            event.step = -1;
-        }
-        mouse_event_fn(event);
-    });
-
-    canvas_div.append(canvas);
-    canvas_div.append(rubberband);
-
-    this.rubberband = rubberband;
-    this.rubberband_canvas = rubberband[0];
-    this.rubberband_context = rubberband[0].getContext("2d");
-    this.rubberband_context.strokeStyle = "#000000";
-
-    this._resize_canvas = function(width, height) {
-        // Keep the size of the canvas, canvas container, and rubber band
-        // canvas in synch.
-        canvas_div.css('width', width)
-        canvas_div.css('height', height)
-
-        canvas.attr('width', width * mpl.ratio);
-        canvas.attr('height', height * mpl.ratio);
-        canvas.attr('style', 'width: ' + width + 'px; height: ' + height + 'px;');
-
-        rubberband.attr('width', width);
-        rubberband.attr('height', height);
-    }
-
-    // Set the figure to an initial 600x600px, this will subsequently be updated
-    // upon first draw.
-    this._resize_canvas(600, 600);
-
-    // Disable right mouse context menu.
-    $(this.rubberband_canvas).bind("contextmenu",function(e){
-        return false;
-    });
-
-    function set_focus () {
-        canvas.focus();
-        canvas_div.focus();
-    }
-
-    window.setTimeout(set_focus, 100);
-}
-
-mpl.figure.prototype._init_toolbar = function() {
-    var fig = this;
-
-    var nav_element = $('<div/>')
-    nav_element.attr('style', 'width: 100%');
-    this.root.append(nav_element);
-
-    // Define a callback function for later on.
-    function toolbar_event(event) {
-        return fig.toolbar_button_onclick(event['data']);
-    }
-    function toolbar_mouse_event(event) {
-        return fig.toolbar_button_onmouseover(event['data']);
-    }
-
-    for(var toolbar_ind in mpl.toolbar_items) {
-        var name = mpl.toolbar_items[toolbar_ind][0];
-        var tooltip = mpl.toolbar_items[toolbar_ind][1];
-        var image = mpl.toolbar_items[toolbar_ind][2];
-        var method_name = mpl.toolbar_items[toolbar_ind][3];
-
-        if (!name) {
-            // put a spacer in here.
-            continue;
-        }
-        var button = $('<button/>');
-        button.addClass('ui-button ui-widget ui-state-default ui-corner-all ' +
-                        'ui-button-icon-only');
-        button.attr('role', 'button');
-        button.attr('aria-disabled', 'false');
-        button.click(method_name, toolbar_event);
-        button.mouseover(tooltip, toolbar_mouse_event);
-
-        var icon_img = $('<span/>');
-        icon_img.addClass('ui-button-icon-primary ui-icon');
-        icon_img.addClass(image);
-        icon_img.addClass('ui-corner-all');
-
-        var tooltip_span = $('<span/>');
-        tooltip_span.addClass('ui-button-text');
-        tooltip_span.html(tooltip);
-
-        button.append(icon_img);
-        button.append(tooltip_span);
-
-        nav_element.append(button);
-    }
-
-    var fmt_picker_span = $('<span/>');
-
-    var fmt_picker = $('<select/>');
-    fmt_picker.addClass('mpl-toolbar-option ui-widget ui-widget-content');
-    fmt_picker_span.append(fmt_picker);
-    nav_element.append(fmt_picker_span);
-    this.format_dropdown = fmt_picker[0];
-
-    for (var ind in mpl.extensions) {
-        var fmt = mpl.extensions[ind];
-        var option = $(
-            '<option/>', {selected: fmt === mpl.default_extension}).html(fmt);
-        fmt_picker.append(option)
-    }
-
-    // Add hover states to the ui-buttons
-    $( ".ui-button" ).hover(
-        function() { $(this).addClass("ui-state-hover");},
-        function() { $(this).removeClass("ui-state-hover");}
-    );
-
-    var status_bar = $('<span class="mpl-message"/>');
-    nav_element.append(status_bar);
-    this.message = status_bar[0];
-}
-
-mpl.figure.prototype.request_resize = function(x_pixels, y_pixels) {
-    // Request matplotlib to resize the figure. Matplotlib will then trigger a resize in the client,
-    // which will in turn request a refresh of the image.
-    this.send_message('resize', {'width': x_pixels, 'height': y_pixels});
-}
-
-mpl.figure.prototype.send_message = function(type, properties) {
-    properties['type'] = type;
-    properties['figure_id'] = this.id;
-    this.ws.send(JSON.stringify(properties));
-}
-
-mpl.figure.prototype.send_draw_message = function() {
-    if (!this.waiting) {
-        this.waiting = true;
-        this.ws.send(JSON.stringify({type: "draw", figure_id: this.id}));
-    }
-}
-
-
-mpl.figure.prototype.handle_save = function(fig, msg) {
-    var format_dropdown = fig.format_dropdown;
-    var format = format_dropdown.options[format_dropdown.selectedIndex].value;
-    fig.ondownload(fig, format);
-}
-
-
-mpl.figure.prototype.handle_resize = function(fig, msg) {
-    var size = msg['size'];
-    if (size[0] != fig.canvas.width || size[1] != fig.canvas.height) {
-        fig._resize_canvas(size[0], size[1]);
-        fig.send_message("refresh", {});
-    };
-}
-
-mpl.figure.prototype.handle_rubberband = function(fig, msg) {
-    var x0 = msg['x0'] / mpl.ratio;
-    var y0 = (fig.canvas.height - msg['y0']) / mpl.ratio;
-    var x1 = msg['x1'] / mpl.ratio;
-    var y1 = (fig.canvas.height - msg['y1']) / mpl.ratio;
-    x0 = Math.floor(x0) + 0.5;
-    y0 = Math.floor(y0) + 0.5;
-    x1 = Math.floor(x1) + 0.5;
-    y1 = Math.floor(y1) + 0.5;
-    var min_x = Math.min(x0, x1);
-    var min_y = Math.min(y0, y1);
-    var width = Math.abs(x1 - x0);
-    var height = Math.abs(y1 - y0);
-
-    fig.rubberband_context.clearRect(
-        0, 0, fig.canvas.width, fig.canvas.height);
-
-    fig.rubberband_context.strokeRect(min_x, min_y, width, height);
-}
-
-mpl.figure.prototype.handle_figure_label = function(fig, msg) {
-    // Updates the figure title.
-    fig.header.textContent = msg['label'];
-}
-
-mpl.figure.prototype.handle_cursor = function(fig, msg) {
-    var cursor = msg['cursor'];
-    switch(cursor)
-    {
-    case 0:
-        cursor = 'pointer';
-        break;
-    case 1:
-        cursor = 'default';
-        break;
-    case 2:
-        cursor = 'crosshair';
-        break;
-    case 3:
-        cursor = 'move';
-        break;
-    }
-    fig.rubberband_canvas.style.cursor = cursor;
-}
-
-mpl.figure.prototype.handle_message = function(fig, msg) {
-    fig.message.textContent = msg['message'];
-}
-
-mpl.figure.prototype.handle_draw = function(fig, msg) {
-    // Request the server to send over a new figure.
-    fig.send_draw_message();
-}
-
-mpl.figure.prototype.handle_image_mode = function(fig, msg) {
-    fig.image_mode = msg['mode'];
-}
-
-mpl.figure.prototype.updated_canvas_event = function() {
-    // Called whenever the canvas gets updated.
-    this.send_message("ack", {});
-}
-
-// A function to construct a web socket function for onmessage handling.
-// Called in the figure constructor.
-mpl.figure.prototype._make_on_message_function = function(fig) {
-    return function socket_on_message(evt) {
-        if (evt.data instanceof Blob) {
-            /* FIXME: We get "Resource interpreted as Image but
-             * transferred with MIME type text/plain:" errors on
-             * Chrome.  But how to set the MIME type?  It doesn't seem
-             * to be part of the websocket stream */
-            evt.data.type = "image/png";
-
-            /* Free the memory for the previous frames */
-            if (fig.imageObj.src) {
-                (window.URL || window.webkitURL).revokeObjectURL(
-                    fig.imageObj.src);
-            }
-
-            fig.imageObj.src = (window.URL || window.webkitURL).createObjectURL(
-                evt.data);
-            fig.updated_canvas_event();
-            fig.waiting = false;
-            return;
-        }
-        else if (typeof evt.data === 'string' && evt.data.slice(0, 21) == "data:image/png;base64") {
-            fig.imageObj.src = evt.data;
-            fig.updated_canvas_event();
-            fig.waiting = false;
-            return;
-        }
-
-        var msg = JSON.parse(evt.data);
-        var msg_type = msg['type'];
-
-        // Call the  "handle_{type}" callback, which takes
-        // the figure and JSON message as its only arguments.
-        try {
-            var callback = fig["handle_" + msg_type];
-        } catch (e) {
-            console.log("No handler for the '" + msg_type + "' message type: ", msg);
-            return;
-        }
-
-        if (callback) {
-            try {
-                // console.log("Handling '" + msg_type + "' message: ", msg);
-                callback(fig, msg);
-            } catch (e) {
-                console.log("Exception inside the 'handler_" + msg_type + "' callback:", e, e.stack, msg);
-            }
-        }
-    };
-}
-
-// from http://stackoverflow.com/questions/1114465/getting-mouse-location-in-canvas
-mpl.findpos = function(e) {
-    //this section is from http://www.quirksmode.org/js/events_properties.html
-    var targ;
-    if (!e)
-        e = window.event;
-    if (e.target)
-        targ = e.target;
-    else if (e.srcElement)
-        targ = e.srcElement;
-    if (targ.nodeType == 3) // defeat Safari bug
-        targ = targ.parentNode;
-
-    // jQuery normalizes the pageX and pageY
-    // pageX,Y are the mouse positions relative to the document
-    // offset() returns the position of the element relative to the document
-    var x = e.pageX - $(targ).offset().left;
-    var y = e.pageY - $(targ).offset().top;
-
-    return {"x": x, "y": y};
-};
-
-/*
- * return a copy of an object with only non-object keys
- * we need this to avoid circular references
- * http://stackoverflow.com/a/24161582/3208463
- */
-function simpleKeys (original) {
-  return Object.keys(original).reduce(function (obj, key) {
-    if (typeof original[key] !== 'object')
-        obj[key] = original[key]
-    return obj;
-  }, {});
-}
-
-mpl.figure.prototype.mouse_event = function(event, name) {
-    var canvas_pos = mpl.findpos(event)
-
-    if (name === 'button_press')
-    {
-        this.canvas.focus();
-        this.canvas_div.focus();
-    }
-
-    var x = canvas_pos.x * mpl.ratio;
-    var y = canvas_pos.y * mpl.ratio;
-
-    this.send_message(name, {x: x, y: y, button: event.button,
-                             step: event.step,
-                             guiEvent: simpleKeys(event)});
-
-    /* This prevents the web browser from automatically changing to
-     * the text insertion cursor when the button is pressed.  We want
-     * to control all of the cursor setting manually through the
-     * 'cursor' event from matplotlib */
-    event.preventDefault();
-    return false;
-}
-
-mpl.figure.prototype._key_event_extra = function(event, name) {
-    // Handle any extra behaviour associated with a key event
-}
-
-mpl.figure.prototype.key_event = function(event, name) {
-
-    // Prevent repeat events
-    if (name == 'key_press')
-    {
-        if (event.which === this._key)
-            return;
-        else
-            this._key = event.which;
-    }
-    if (name == 'key_release')
-        this._key = null;
-
-    var value = '';
-    if (event.ctrlKey && event.which != 17)
-        value += "ctrl+";
-    if (event.altKey && event.which != 18)
-        value += "alt+";
-    if (event.shiftKey && event.which != 16)
-        value += "shift+";
-
-    value += 'k';
-    value += event.which.toString();
-
-    this._key_event_extra(event, name);
-
-    this.send_message(name, {key: value,
-                             guiEvent: simpleKeys(event)});
-    return false;
-}
-
-mpl.figure.prototype.toolbar_button_onclick = function(name) {
-    if (name == 'download') {
-        this.handle_save(this, null);
-    } else {
-        this.send_message("toolbar_button", {name: name});
-    }
-};
-
-mpl.figure.prototype.toolbar_button_onmouseover = function(tooltip) {
-    this.message.textContent = tooltip;
-};
-mpl.toolbar_items = [["Home", "Reset original view", "fa fa-home icon-home", "home"], ["Back", "Back to  previous view", "fa fa-arrow-left icon-arrow-left", "back"], ["Forward", "Forward to next view", "fa fa-arrow-right icon-arrow-right", "forward"], ["", "", "", ""], ["Pan", "Pan axes with left mouse, zoom with right", "fa fa-arrows icon-move", "pan"], ["Zoom", "Zoom to rectangle", "fa fa-square-o icon-check-empty", "zoom"], ["", "", "", ""], ["Download", "Download plot", "fa fa-floppy-o icon-save", "download"]];
-
-mpl.extensions = ["eps", "pdf", "png", "ps", "raw", "svg"];
-
-mpl.default_extension = "png";var comm_websocket_adapter = function(comm) {
-    // Create a "websocket"-like object which calls the given IPython comm
-    // object with the appropriate methods. Currently this is a non binary
-    // socket, so there is still some room for performance tuning.
-    var ws = {};
-
-    ws.close = function() {
-        comm.close()
-    };
-    ws.send = function(m) {
-        //console.log('sending', m);
-        comm.send(m);
-    };
-    // Register the callback with on_msg.
-    comm.on_msg(function(msg) {
-        //console.log('receiving', msg['content']['data'], msg);
-        // Pass the mpl event to the overridden (by mpl) onmessage function.
-        ws.onmessage(msg['content']['data'])
-    });
-    return ws;
-}
-
-mpl.mpl_figure_comm = function(comm, msg) {
-    // This is the function which gets called when the mpl process
-    // starts-up an IPython Comm through the "matplotlib" channel.
-
-    var id = msg.content.data.id;
-    // Get hold of the div created by the display call when the Comm
-    // socket was opened in Python.
-    var element = $("#" + id);
-    var ws_proxy = comm_websocket_adapter(comm)
-
-    function ondownload(figure, format) {
-        window.open(figure.imageObj.src);
-    }
-
-    var fig = new mpl.figure(id, ws_proxy,
-                           ondownload,
-                           element.get(0));
-
-    // Call onopen now - mpl needs it, as it is assuming we've passed it a real
-    // web socket which is closed, not our websocket->open comm proxy.
-    ws_proxy.onopen();
-
-    fig.parent_element = element.get(0);
-    fig.cell_info = mpl.find_output_cell("<div id='" + id + "'></div>");
-    if (!fig.cell_info) {
-        console.error("Failed to find cell for figure", id, fig);
-        return;
-    }
-
-    var output_index = fig.cell_info[2]
-    var cell = fig.cell_info[0];
-
-};
-
-mpl.figure.prototype.handle_close = function(fig, msg) {
-    var width = fig.canvas.width/mpl.ratio
-    fig.root.unbind('remove')
-
-    // Update the output cell to use the data from the current canvas.
-    fig.push_to_output();
-    var dataURL = fig.canvas.toDataURL();
-    // Re-enable the keyboard manager in IPython - without this line, in FF,
-    // the notebook keyboard shortcuts fail.
-    IPython.keyboard_manager.enable()
-    $(fig.parent_element).html('<img src="' + dataURL + '" width="' + width + '">');
-    fig.close_ws(fig, msg);
-}
-
-mpl.figure.prototype.close_ws = function(fig, msg){
-    fig.send_message('closing', msg);
-    // fig.ws.close()
-}
-
-mpl.figure.prototype.push_to_output = function(remove_interactive) {
-    // Turn the data on the canvas into data in the output cell.
-    var width = this.canvas.width/mpl.ratio
-    var dataURL = this.canvas.toDataURL();
-    this.cell_info[1]['text/html'] = '<img src="' + dataURL + '" width="' + width + '">';
-}
-
-mpl.figure.prototype.updated_canvas_event = function() {
-    // Tell IPython that the notebook contents must change.
-    IPython.notebook.set_dirty(true);
-    this.send_message("ack", {});
-    var fig = this;
-    // Wait a second, then push the new image to the DOM so
-    // that it is saved nicely (might be nice to debounce this).
-    setTimeout(function () { fig.push_to_output() }, 1000);
-}
-
-mpl.figure.prototype._init_toolbar = function() {
-    var fig = this;
-
-    var nav_element = $('<div/>')
-    nav_element.attr('style', 'width: 100%');
-    this.root.append(nav_element);
-
-    // Define a callback function for later on.
-    function toolbar_event(event) {
-        return fig.toolbar_button_onclick(event['data']);
-    }
-    function toolbar_mouse_event(event) {
-        return fig.toolbar_button_onmouseover(event['data']);
-    }
-
-    for(var toolbar_ind in mpl.toolbar_items){
-        var name = mpl.toolbar_items[toolbar_ind][0];
-        var tooltip = mpl.toolbar_items[toolbar_ind][1];
-        var image = mpl.toolbar_items[toolbar_ind][2];
-        var method_name = mpl.toolbar_items[toolbar_ind][3];
-
-        if (!name) { continue; };
-
-        var button = $('<button class="btn btn-default" href="#" title="' + name + '"><i class="fa ' + image + ' fa-lg"></i></button>');
-        button.click(method_name, toolbar_event);
-        button.mouseover(tooltip, toolbar_mouse_event);
-        nav_element.append(button);
-    }
-
-    // Add the status bar.
-    var status_bar = $('<span class="mpl-message" style="text-align:right; float: right;"/>');
-    nav_element.append(status_bar);
-    this.message = status_bar[0];
-
-    // Add the close button to the window.
-    var buttongrp = $('<div class="btn-group inline pull-right"></div>');
-    var button = $('<button class="btn btn-mini btn-primary" href="#" title="Stop Interaction"><i class="fa fa-power-off icon-remove icon-large"></i></button>');
-    button.click(function (evt) { fig.handle_close(fig, {}); } );
-    button.mouseover('Stop Interaction', toolbar_mouse_event);
-    buttongrp.append(button);
-    var titlebar = this.root.find($('.ui-dialog-titlebar'));
-    titlebar.prepend(buttongrp);
-}
-
-mpl.figure.prototype._root_extra_style = function(el){
-    var fig = this
-    el.on("remove", function(){
-	fig.close_ws(fig, {});
-    });
-}
-
-mpl.figure.prototype._canvas_extra_style = function(el){
-    // this is important to make the div 'focusable
-    el.attr('tabindex', 0)
-    // reach out to IPython and tell the keyboard manager to turn it's self
-    // off when our div gets focus
-
-    // location in version 3
-    if (IPython.notebook.keyboard_manager) {
-        IPython.notebook.keyboard_manager.register_events(el);
-    }
-    else {
-        // location in version 2
-        IPython.keyboard_manager.register_events(el);
-    }
-
-}
-
-mpl.figure.prototype._key_event_extra = function(event, name) {
-    var manager = IPython.notebook.keyboard_manager;
-    if (!manager)
-        manager = IPython.keyboard_manager;
-
-    // Check for shift+enter
-    if (event.shiftKey && event.which == 13) {
-        this.canvas_div.blur();
-        event.shiftKey = false;
-        // Send a "J" for go to next cell
-        event.which = 74;
-        event.keyCode = 74;
-        manager.command_mode();
-        manager.handle_keydown(event);
-    }
-}
-
-mpl.figure.prototype.handle_save = function(fig, msg) {
-    fig.ondownload(fig, null);
-}
-
-
-mpl.find_output_cell = function(html_output) {
-    // Return the cell and output element which can be found *uniquely* in the notebook.
-    // Note - this is a bit hacky, but it is done because the "notebook_saving.Notebook"
-    // IPython event is triggered only after the cells have been serialised, which for
-    // our purposes (turning an active figure into a static one), is too late.
-    var cells = IPython.notebook.get_cells();
-    var ncells = cells.length;
-    for (var i=0; i<ncells; i++) {
-        var cell = cells[i];
-        if (cell.cell_type === 'code'){
-            for (var j=0; j<cell.output_area.outputs.length; j++) {
-                var data = cell.output_area.outputs[j];
-                if (data.data) {
-                    // IPython >= 3 moved mimebundle to data attribute of output
-                    data = data.data;
-                }
-                if (data['text/html'] == html_output) {
-                    return [cell, data, j];
-                }
-            }
-        }
-    }
-}
-
-// Register the function which deals with the matplotlib target/channel.
-// The kernel may be null if the page has been refreshed.
-if (IPython.notebook.kernel != null) {
-    IPython.notebook.kernel.comm_manager.register_target('matplotlib', mpl.mpl_figure_comm);
-}
-
-</script>
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAgAElEQVR4nO3de2xU95338RN7bS7GdbkFG1zsXLg1AbY81CUNAXzDPBs7dLNNKJsUb2kwNriYNEnLpctstkBNGpBWj4iiJ4n4CwFSASkSCAVQAImoaiQbYUAhCBI8MpFQhWxAYSyBv88ffTzxcL4HfofBM+fn835Jn3/M2HM15+2Q43EEAAAAoeKk+wYAAAAgtQhAAACAkCEAAQAAQoYABAAACBkCEAAAIGQIQAAAgJAhAAEAAEKGAAQAAAgZAhAAACBkCEAAAICQIQABAABChgAEAAAIGQIQAAAgZAhAAACAkCEAAQAAQoYABAAACBkCEAAAIGQIQAAAgJAhAAEAAEKGAAQAAAgZAhAAACBkCEAAAICQIQABAABChgAEAAAIGQIQAAAgZAhAAACAkCEAAQAAQoYABAAACBkCEAAAIGQIQAAAgJAhAAEAAEKGAAQAAAgZAhAAACBkCEAAAICQIQABAABChgAEAAAIGQIQAAAgZAhAAACAkCEAAQAAQoYABAAACBkCEAAAIGQIQAAAgJAhAAEAAEKGAAQAAAgZAhAAACBkCEAAAICQIQABAABChgAEAAAIGQIQAAAgZAhAAACAkCEAAQAAQoYABAAACBkCEAAAIGQIQAAAgJAhAAEAAEKGAEQgbN++XYqLi2XQoEEyY8YMOXHiRLpvEgAAAxYBiLTbvXu3ZGVlyQcffCDnzp2TpqYmycnJkcuXLxt9/p07dyQajUpnZ6d0dXUxxlhg19nZKdFoVO7cudPPf7MC90YAIu1KSkqkvr4+4WOTJ0+WNWvWGH1+NBoVx3EYY8yaRaPR/vjrFDBGACKturu7JTMzU/bt25fw8VWrVsmcOXPUz4nFYgk/Ube3t4vjODLb+ReZ5yxkjLHAbrbzL+I4jnR2dqbir1jAEwGItOro6BDHceTkyZMJH9+0aZNMnDhR/ZxIJKL+RD3PWSgVj/ycMcYCu3nOQnEcR7q6ulLxVyzgiQBEWvUG4GeffZbw8Y0bN8qkSZPUz7n7vwD2/hMwAcgYC/oIQAQFAYi0epB/Ar5bV1cXAcgYs2IEIIKCAETalZSUSENDQ8LHpkyZYnwSCAHIGLNlBCCCggBE2vX+GpiPPvpIzp07J6tXr5acnBz5+uuvjT6fAGSM2TICEEFBACIQtm/fLkVFRZKdnS0zZsyQ48ePG38uAcgYs2UEIIKCAIT1CEDGmC0jABEUBCCsRwAyxmwZAYigIABhPQKQMWbLCEAEBQEI6xGAjDFbRgAiKAhAWI8AZIzZMgIQQUEAwnoEIGPMlhGACAoCENYjABljtowARFAQgLAeAcgYs2UEIIKCAIT1CEDGmC0jABEUBCCsRwAyxmwZAYigIABhPQKQMWbLCEAEBQEI6xGAjDFbRgAiKAhAWI8AZIzZMgIQQUEAwnoEIGPMlhGACAoCENYjABljtowARFAQgLAeAcgYs2UEIIKCAIT1CEDGmC0jABEUBCCsRwAyxmwZAYigIABhPQKQMWbLCEAEBQEI6xGAjDFbRgAiKAhAWI8AZIzZMgIQQUEAwnoEIGPMlhGACAoCENYjABljtowARFAQgLAeAcgYs2UEIIKCAIT1CEDGmC0jABEUBCCsRwAyxmwZAYigIABhPQKQMWbLCEAEBQEI6xGAjDFbRgAiKAhAWI8AZIzZMgIQQUEAwnoEIGPMlhGACAoCENYjABljtowARFAQgLAeAcgYs2UEIIKCAIT1CEDGmC0jABEUBCCsRwAyxmwZAYigIABhPQKQMWbLCEAEBQEI6xGAjDFbRgAiKAhAWI8AZIzZMgIQQUEAwnoEIGPMlhGACAoCENYjABljtowARFAQgLAeAcgYs2UEIIKCAIT1CEDGmC0jABEUBCD61fHjx6W6uloKCgrEcRzZv39/wp/39PRIJBKRgoICGTx4sMydO1fOnDnj6zoIQMaYLSMAERQEIPrVwYMHZf369bJ37141AJubmyU3N1f27t0rbW1tsmjRIikoKJDr168bXwcByBizZQQggoIARMrcHYA9PT2Sn58vzc3N8Y/FYjHJy8uT999/3/jrEoCMMVtGACIoCECkzN0BePHiRXEcR1paWhIu98ILL8iSJUs8v04sFpOurq74otEoAcgYs2IEIIKCAETK3B2AJ0+eFMdxpKOjI+Fyy5Ytk/nz53t+nUgkIo7juEYAMsaCPgIQQUEAImW8AvDKlSsJl3vttdekqqrK8+vwXwAZY7aOAERQEIBImYf1T8B34/8BZIzZMgIQQUEAImW8TgLZsmVL/GPd3d3hOgkk4yX30n2bGGP9NgIQQUEAol/duHFDWltbpbW1VRzHkW3btklra6tcvnxZRP7xa2Dy8vJk37590tbWJosXLw7Xr4EhABkL1QhABAUBiH716aefqids1NbWish3vwg6Pz9fBg0aJHPmzJG2tjZf10EAMsZsGQGIoCAAYT0CkDFmywhABAUBCOsRgIwxW0YAIigIQFjP6gDUpkVh5iL30n07GWO+RwAiKAhAWI8AZIzZMgIQQUEAwnoEIGPMlhGACAoCENYjABljtowARFAQgLAeAcgYs2UEIIKCAIT1BlwAalOisDLrF0bz8zXTfj8ZG+AjABEUBCCsRwASgIzZMgIQQUEAwnoEIAHImC0jABEUBCCsRwASgIzZMgIQQUEAwnoEIAHImC0jABEUBCCsF4oA1GYYhfNzlhgvqSg0/VzCkz3MmZ41H5Az6QlABAUBCOsRgAQgC/EIQOCBEICwHgFIALIQjwAEHggBCOsRgAQgC/EIQOCBEICwHgFIALIQjwAEHggBCOuFNgAN53V2cNWIZe6NqnNPuVxSB2LtNg5+xTXj6yAgwzOv5/+uzR9W65r6fWD6unuIIwARFAQgrEcA3nsEIBswIwCBh4YAhPUIwHuPAGQDZgQg8NAQgLAeAXjvEYBswIwABB4aAhDWIwDvPQKQDZgRgMBDQwDCeqENwGRDSIkz9czgn7ztWvnsja4t+EGTa2oAKrfbODJNz+70uJ753/uVa+rb5ylfL5mAqMz+d9d8xWwqzmA1jKv+eC2rj08yX8/wOV0wfrVrfr5fHuR5IQARFAQgrEcAEoAEYD+9nghA/6+9+9w2AhBBQQDCegQgAUgA9tPriQD0/9q7z20jABEUBCCsRwASgARgP72eCED/r7373DYCEEFBAMJ6BCABSAD20+uJAPT/2rvPbSMAERQEIKxHABKABGA/vZ4IQP+vvfvcNgIQQUEAwnoEYP8enLVfDTO3qtm1KWu3ufbkpq2uza38k2tVo5e7pkWBFlyVg1+R+UNedU17fBY88aZr2nWbPt5VeUvdG/5r17Tw9Hy8lRhO+tfkGLxO1GgyDSHT6/W4bu0+a7/KJZlgrspf4dqC4tdd8wo79dcmKc+/drv7/nn5914lABEIBCCsRwASgAQgAUgAAv4QgLAeAUgAEoAEIAEI+EMAwnoEIAFIABKABCDgDwEI6xGABCABSAASgIA/BCCs5xmAqThz0s+BcwBNi7OqCW+5Nv7/bnHtzjdPulb0f/7sWtmcTa6pB+ERy6Tq0QbX1OdfOaN5weNvuKadDW16pqp2+7TQWDC2UZ0WKmpAajFk+JrXXrNauJqeTes10+8N9f4pX089S127f0owLyhY6Zrpfa7M+oX6XGmviad/u821qom/i6/8iSYCEIFAAMJ6BCABSAASgAQg4A8BCOsRgAQgAUgAEoCAPwQgrEcAEoAEIAFIAAL+EICwHgFIABKABCABCPhDAMJ6/RKAPs5gVGPhYUehn7MsTc8MNg0I0ylfT3tsnty81bVpH//BtaLtf3atbN4mddpZwGqk/nCta8m8DZn29ndaVGiBuqBwlTrtMesbEL1TI045K9U0zLTPNX5sknl9+jlbWLt/2vekciauFnDqmcYez7X2GtN+6Jm+YqtrfR+/0qyXCEAEAgEI6xGABCABSAASgIA/BCD61ebNm2XmzJkybNgwGT16tCxcuFC++OKLhMvEYjFpbGyUkSNHytChQ6Wmpkai0ajxdRCABCABSAASgIA/BCD6VVVVlezYsUPOnDkjp06dkueff17Gjx8vN2/ejF+mvr5exo0bJ4cPH5aWlhYpLS2V6dOny+3bt42ugwAkAAlAApAABPwhAJFSV69eFcdx5Pjx4yIi0tnZKVlZWbJ79+74ZTo6OiQjI0MOHTpk9DUJQAKQACQACUDAHwIQKXXhwgVxHEfa2tpEROTo0aPiOI5cu3Yt4XLTpk2TDRs2GH3NeABmvHjfIEkqwjxmGnvqwdQwpLQZfz2vGR7k1Lch026P8jgYv0WbdnD+0QbXpv1mmzr1Lb1Mn4MkgkZ7bNS3ctOu18fXVB9H5TnVgiaZM3n74wz3ZJ4D07fUU+Pf9Hnx8QOTdsa29taCfa+zfHgtAYhAIACRMj09PVJTUyOzZ8+Of2znzp2SnZ3tumxlZaXU1dWpXycWi0lXV1d80WiUACQACUACkAAEfCAAkTIrVqyQoqKihBM8vAKwoqJCli9frn6dSCQijuO4RgASgAQgAUgAAmYIQKREY2OjFBYWyqVLlxI+/iD/BMx/ASQACUACkAAEkkMAol/19PTIypUrZezYsfLll1+6/rz3JJA9e/bEP3blypUHOwmEACQACUACkAAEjBCA6FcNDQ2Sl5cnx44dk2+++Sa+b7/9Nn6Z+vp6KSwslCNHjkhLS4uUlZU92K+BeeRn94+9ZKPQMKTUg5dhDJleh3ZwNo01r9AwjkLtuk0D0DQ0lMupB9z8FcZv05XMa0J7vNTbbRjr2hnEC37QZP62bw85XLXbqD5//fBDlOn3WlK3J4kfgry+V42/3/pc57yMFwlABAIBiH6l/b96juPIjh074pe5deuWNDY2yogRI2TIkCFSXV0t7e3txtdBABKABCABSAAC/hCAsB4BSAASgAQgAQj4QwDCegQgAUgAEoAEIOAPAQjrEYAEIAFIABKAgD8EIKznGYDJxp4y7W2+/ESXKwqVt/1SA8kwPtSzQJUDu1cMqfdFOxBrt9swfPojzNW34zOMHDXiTAPC8HZrUaeeLTp6ufr2cMa3O4m4Vp/TJCLTzw8zSV3PQ45Mr+8XX2cM32PznIUEIAKBAIT1CEACkAAkAAlAwB8CENYjAAlAApAAJAABfwhAWI8AJAAJQAKQAAT8IQBhPQKQACQACUACEPCHAIT1egOwdNDLCQf7pM669TjYLBi/2jX1co+/4Zp2INaCUo0C5SxX7XarUfFogzrtgK/enlF1rj33/BbXtAOk+hZvSqSq087GVELK6+3AvM7mvHvafdbeWk6bdkay+nrysfLZG13TXjsLnnjTPe11ov0gM/F3rqlncmsRncQPPBUZHmcgK9NeE8kEoHr/fNxn0zPN1e/BPq+t8u//kgBEIBCAsB4BSAASgAQgAQj4QwDCegQgAUgAEoAEIOAPAQjrEYAEIAFIABKAgD8EIKxHABKABCABSAAC/hCAsF5vAJYNfjnhwK4esPOWumZ6RmtFxkvqX+7a55eWbXbN9CxLLTK1g49pPHpFk3qg0w5oSuSU/Pu7rmlxpYWwaYyqgTp5jTotpNSoUG7jc9VbXJtd845rP/nFu67NrWp2rWrEMveU58Uzfkredq1q0u/de2qda5UzI65pr/mqH651zfSHIz/fL8Zhp12P6Q8Apm/bpsSedlu01+yCx9+QBY/91jXt8da+V/v+HVQxfgUBiEAgAGE9ApAAJAAJQAIQ8IcAhPUIQAKQACQACUDAHwIQ1iMACUACkAAkAAF/CEBYjwAkAAlAApAABPwhAGG93gCsyK9LDCTl7NX5P9rgnhYbHmeMqgds7QxN5WChHYjVg8UPmlzTrkM9aGqh5+et4AwDUD0TVwtmJYbUs5eVyxmfNe0x7XoWFKx0rerp9e4pZ8mWzdvk2vypf3BNfQyV597rLFTt7F7jx8fwLHDTs67Vs6v/+T9d8zqjef70P7hm+kOU6duxmcas+gOK9lgrz33VxN+pz4H2+eoPI32eo9J/+jcCEIFAAMJ6BCABSAASgAQg4A8BCOsRgAQgAUgAEoCAPwQgrEcAEoAEIAFIAAL+EICwHgFIABKABCABCPhDAMJ6vQFYPurXiQc65UBT9txG19QzcbW32fI4EKtnFiuBpJ0xqp1Zqp0FqoadcgZixTP/7ZoWwlWj6tSDqRZI2lmy2tczPaNZDQUlKrSzuL2iyfS6tWBTP7dwlWvlz/7RNfWMbSX+y+Zscu2Zl/6sTjsDWXte1DNVtbPFlcDV3m5O++FIO9P4R3VbXdMerwWFq2Ru5Z9c065bPctZi3rluSp55V3XtNuiXce8ij+55nUWsBqp2mtROwO5z/dYadZLBCACgQCE9QhAApAAJAAJQMAfAhDWIwAJQAKQACQAAX8IQFiPACQACUACkAAE/CEAYT0CkAAkAAlAAhDwhwCE9eIBOLw2Icy0tyvTzrDVDtjagWtu5Z/UKNQiTjvoamcQT1u5zbXKH/+Xa9rbn2kHuWf/9R3XtOgte26jelbrTxa/65ppKKpnAWtv3aadqTrhLdfUM3aVM5Kr8leoly3/6R9d06JCiyYtuNXbowSSFq7a6+6pN7ep00JTvT3K9ahv06YFt3Y2vBLhWuhrcaSFWcUjP1fP0NXODNbun3p2r3aGrfID05wFza6pZ/Yqz5/XGc0/em2ra+rZ/trrk7eCQwARgLAeAUgAEoAEIAEI+EMAwnoEIAFIABKABCDgDwEI6xGABCABSAASgIA/BCCsRwASgAQgAUgAAv4QgLAeAUgAEoAEIAEI+EMAwnpe7wWsTX0/0RkR19Rf9zJimRo52q93mbF0q2taBDz3L1tcU3+lhnKgUX9dhfarOJTbN7eqWSp+8rZr6q9O0X4FjeGvYtF+RY4aYdqvi9Hez1W5LfO/9yv9MVOCTftcNSqU14n6XrJJRJj6HsRPr0/qPahN38tZ/VUlhu8trMaax68aMr1uNZqU7xf1urX3glZ+oFADUPthxOO+PPPzP7umvmf4fd5nuWzwywQgAoEAhPUIQAKQACQACUDAHwIQ1iMACUACkAAkAAF/CEBYjwAkAAlAApAABPwhAGE9ApAAJAAJQAIQ8IcAhPW8zgJWY087QBq+l+/87/1Kf69VLRb7vifx/58aSFpkapfTzn5V4sE4wvKW6pdVbrd2kNMO4mpIaeGiTAsp9THUrjfjJfV5VaNSe99f5TlVI8XwudICQLvPXmfOmgak6XNgGntqACpnyWq3T42eYbX6e0ZrMayEmBaA6n0xfI2Z3hbP50V7Xg3fC7jv15+X8SIBiEAgAGE9ApAAJAAJQAIQ8IcARL967733ZOrUqZKbmyu5ubkya9YsOXjwYPzPY7GYNDY2ysiRI2Xo0KFSU1Mj0WjU13UQgAQgAUgAEoCAPwQg+tXHH38sBw4ckPPnz8v58+dl3bp1kpWVJWfOnBERkfr6ehk3bpwcPnxYWlpapLS0VKZPny63b982vg4CkAAkAAlAAhDwhwBEyg0fPlw+/PBD6ezslKysLNm9e3f8zzo6OiQjI0MOHTpk/PUIQAKQACQACUDAHwIQKXP79m3ZtWuXZGdny9mzZ+Xo0aPiOI5cu3Yt4XLTpk2TDRs2GH/deACO/NV9z+YzPXtVPbvPI3zUA4tyOe3A+bAjVbsvXl9TO/ipb22lhJjpQVd7DNVg1s68VM7uVA/YHqGpfb4aKcrtUW+3R0jfPe3sY/Xt5rSQylmi327ttaO9lk2DxjAKtedFDVSPaDK+jcrU4NJex4b3T53H7TbeAzze8x75GQGIQCAA0e9Onz4tOTk5kpmZKXl5eXLgwAEREdm5c6dkZ2e7Ll9ZWSl1dXWeXy8Wi0lXV1d80WiUACQACUACkAAEfCAA0e+6u7vlwoUL8vnnn8uaNWtk1KhRcvbsWc8ArKiokOXLl3t+vUgkIo7juEYAEoAEIAFIAAJmCECkXHl5udTV1T3wPwHzXwAJQAKQACQAgeQQgEi5srIyqa2tjZ8EsmfPnvifXbly5cFPAiEACUACkAAkAAEjBCD61dq1a+XEiRPy1VdfyenTp2XdunWSkZEhn3zyiYj849fAFBYWypEjR6SlpUXKysoe+NfAzMt48b4HENODj+cMw06NFMPYUw+GWixogZrs/TOMYfWsUcP7YhrhfmJWDVDtcklctxpNhs+p8WPoMePHx/RrGt7GZN46z9djof3wYPgWhMafq13O8IztysGvGH8P3u9yvBUcgoIARL9aunSpFBUVSXZ2towePVrKy8vj8ScicuvWLWlsbJQRI0bIkCFDpLq6Wtrb231dBwFIABKABCABCPhDAMJ6BCABSAASgAQg4A8BCOsRgAQgAUgAEoCAPwQgrEcAEoAEIAFIAAL+EICwXm8Alv7Tv933IJfMAdLr873eBst1tqnhWaTqQUX7mh5nkRodpDwOVKYHd/WMSsPIND2Iq5/rcXBO6rnWgsv0cUjiPnte1vT+JRFc6lsdGr6OtdeN52tZuZ6HfjnlbeTUabdRO/vc63tTOTtbnXaWe5+vU/69VwlABAIBCOsRgAQgAUgAEoCAPwQgrEcAEoAEIAFIAAL+EICwHgFIABKABCABCPhDAMJ6nZ2d4jiOPJf5gpT+0799t6yX3Ov75/ea9rken1+Ws9ho5d971Whlg192T/uaQ39hNu3rDX5Zvey8jBdd0x6HeY/8zD3lc9Wvpz3eg152Tf1c5XKlg15O7rlWZvw4JHGfPS9rev8Mpz73ua+4Z/g61l43nq9l5Xoe+uVG/sps2m0c8R/ueX1vfv+XZhte616frzM39x8ngXR2dqb7r06EHAEI6/W+FzBjjNmyaDSa7r86EXIEIKx3584diUaj0t7eHv+Ltaury+r1Ri33JVjjvgRzNt2Xzs5OiUajcufOnXT/1YmQIwAxYHR1/eP/Bezqsv//reG+BBP3JZgG0n0BUoUAxIAxkA4C3Jdg4r4E00C6L0CqEIAYMAbSQYD7Ekzcl2AaSPcFSBUCEANGLBaTSCQisVgs3TcladyXYOK+BNNAui9AqhCAAAAAIUMAAgAAhAwBCAAAEDIEIAAAQMgQgBgwtm/fLsXFxTJo0CCZMWOGnDhxIt036b6OHz8u1dXVUlBQII7jyP79+xP+vKenRyKRiBQUFMjgwYNl7ty5cubMmTTdWm+bN2+WmTNnyrBhw2T06NGycOFC+eKLLxIuE4vFpLGxUUaOHClDhw6VmpqaQL4bwnvvvSdTp06V3Nxcyc3NlVmzZsnBgwfjf27L/dBs3rxZHMeRpqam+MdsuT+RSMT1bhpjxoyJ/7kt3ytAUBCAGBB2794tWVlZ8sEHH8i5c+ekqalJcnJy5PLly+m+afd08OBBWb9+vezdu1cNwObmZsnNzZW9e/dKW1ubLFq0SAoKCuT69etpusW6qqoq2bFjh5w5c0ZOnTolzz//vIwfP15u3rwZv0x9fb2MGzdODh8+LC0tLVJaWirTp0+X27dvp/GWu3388cdy4MABOX/+vJw/f17WrVsnWVlZ8Ziw5X7c7W9/+5sUFxfLtGnTEgLQlvsTiUTkqaeekm+++Sa+q1evxv/clu8VICgIQAwIJSUlUl9fn/CxyZMny5o1a9J0i/y7OwB7enokPz9fmpub4x+LxWKSl5cn77//fjpuorGrV6+K4zhy/PhxERHp7OyUrKws2b17d/wyHR0dkpGRIYcOHUrXzTQ2fPhw+fDDD629Hzdu3JAJEybI4cOHZe7cufEAtOn+RCIRmT59uvpnNn+vAOlCAMJ63d3dkpmZKfv27Uv4+KpVq2TOnDlpulX+3R2AFy9eFMdxpKWlJeFyL7zwgixZsiTVN8+XCxcuiOM40tbWJiIiR48eFcdx5Nq1awmXmzZtmmzYsCEdN9HI7du3ZdeuXZKdnS1nz5619n4sWbJEVq9eLSKSEIA23Z9IJCJDhw6VgoICKS4ulkWLFsnFixdFxO7vFSBdCEBYr6OjQxzHkZMnTyZ8fNOmTTJx4sQ03Sr/7g7AkydPiuM40tHRkXC5ZcuWyfz581N984z19PRITU2NzJ49O/6xnTt3SnZ2tuuylZWVUldXl8qbZ+T06dOSk5MjmZmZkpeXJwcOHBAR++6HiMiuXbvk6aefllu3bolIYgDadH8OHjwof/nLX+T06dPx/5I5ZswY+fvf/27t9wqQTgQgrNcbgJ999lnCxzdu3CiTJk1K063yzysAr1y5knC51157TaqqqlJ984ytWLFCioqKEk4k8AqNiooKWb58eSpvnpHu7m65cOGCfP7557JmzRoZNWqUnD171rr70d7eLo8++qicOnUq/jGTAAzq/enr5s2bMmbMGNm6dau13ytAOhGAsB7/BBwcjY2NUlhYKJcuXUr4uE3/1KgpLy+Xuro66+7H/v37xXEcyczMjM9xHHnkkUckMzNTjhw5YtX9uVtFRYXU19db+b0CpBsBiAGhpKREGhoaEj42ZcqUAXESyJYtW+If6+7uDuT/2N7T0yMrV66UsWPHypdffun6896TDfbs2RP/2JUrVwJ5soGmrKxMamtrrbsf169fl7a2toTNnDlTXn31VWlra7Pu/vQVi8Vk3Lhx8vbbb1v1vQIEBQGIAaH318B89NFHcu7cOVm9erXk5OTI119/ne6bdk83btyQ1tZWaW1tFcdxZNu2bdLa2hr/9TXNzc2Sl5cn+/btk7a2Nlm8eHEgf7VFQ0OD5OXlybFjxxJ+Tce3334bv0x9fb0UFhbKkSNHpKWlRcrKygL560bWrl0rJ06ckK+++kpOnz4t69atk4yMDPnkk09ExJ774aXvPwGL2HN/3njjDTl27JhcunRJ/vrXv0p1dbXk5ubGv8dt+V4BgoIAxICxfft2KSoqkuzsbJkxY0b8V5AE2aeffur65baO40htba2IfPfLbfPz8773WWoAACAASURBVGXQoEEyZ86c+Jm1QaLdB8dxZMeOHfHL3Lp1SxobG2XEiBEyZMgQqa6ulvb29vTdaA9Lly6Nv45Gjx4t5eXl8fgTsed+eLk7AG25P72/1y8rK0vGjh0rL774opw9ezb+57Z8rwBBQQACAACEDAEIAAAQMgQgAABAyBCAAAAAIUMAAgAAhAwBCAAAEDIEIAAAQMgQgAAAACFDAAIAAIQMAQgAABAyBCAAAEDIEIAIhO3bt0txcbEMGjRIZsyYISdOnEj3TQIAYMAiAJF2u3fvlqysLPnggw/k3Llz0tTUJDk5OXL58mWjz79z545Eo1Hp7OyUrq4uxhgL7Do7OyUajcqdO3f6+W9W4N4IQKRdSUmJ1NfXJ3xs8uTJsmbNGqPPj0aj4jgOY4xZs2g02h9/nQLGCECkVXd3t2RmZsq+ffsSPr5q1SqZM2eO0dfo7OwUx3Fk7mP1Uv5EE2OMBXZzH6sXx3Gks7OzP/5KBYwRgEirjo4OcRxHTp48mfDxTZs2ycSJE9XPicViCf+k0vtfAMufaJKqib9jjLHArvyJJnEcR7q6ulLxVyzgiQBEWvUG4GeffZbw8Y0bN8qkSZPUz4lEIuo/qRCAjLGgjwBEUBCASKsH+Sdg/gsgY8zWEYAICgIQaVdSUiINDQ0JH5syZYrxSSBdXV0EIGPMihGACAoCEGnX+2tgPvroIzl37pysXr1acnJy5Ouvvzb6fAKQMWbLCEAEBQGIQNi+fbsUFRVJdna2zJgxQ44fP278uQQgY8yWEYAICgIQ1iMAGWO2jABEUBCAsB4ByBizZQQggoIAhPUIQMaYLSMAERQEIKxHADLGbBkBiKAgAGE9ApAxZssIQAQFAQjrEYCMMVtGACIoCEBYjwBkjNkyAhBBQQDCegQgY8yWEYAICgIQ1iMAGWO2jABEUBCAsB4ByBizZQQggoIAhPUIQMaYLSMAERQEIKxHADLGbBkBiKAgAGE9ApAxZssIQAQFAQjrEYCMMVtGACIoCEBYjwBkjNkyAhBBQQDCegQgY8yWEYAICgIQ1iMAGWO2jABEUBCAsB4ByBizZQQggoIAhPUIQMaYLSMAERQEIKxHADLGbBkBiKAgAGE9ApAxZssIQAQFAQjrEYCMMVtGACIoCEBYjwBkjNkyAhBBQQDCegQgY8yWEYAICgIQ1iMAGWO2jABEUBCAsB4ByBizZQQggoIAhPUIQMaYLSMAERQEIKxHADLGbBkBiKAgAGE9ApAxZssIQAQFAQjrEYCMMVtGACIoCEBYjwBkjNkyAhBBQQDCegQgY8yWEYAICgIQ1iMAGWO2jABEUBCAsB4ByBizZQQggoIAhPUIQMaYLSMAERQEIKxHADLGbBkBiKAgAGE9ApAxZssIQAQFAQjrEYCMMVtGACIoCEBYjwBkjNkyAhBBQQDCegQgY8yWEYAICgIQ1iMAGWO2jABEUBCA6FfHjx+X6upqKSgoEMdxZP/+/Ql/3tPTI5FIRAoKCmTw4MEyd+5cOXPmjK/rIAAZY7aMAERQEIDoVwcPHpT169fL3r171QBsbm6W3Nxc2bt3r7S1tcmiRYukoKBArl+/bnwdBCBjzJYRgAgKAhApc3cA9vT0SH5+vjQ3N8c/FovFJC8vT95//33jrxvIAJz0e/fSfZsYY2kfAYigIACRMncH4MWLF8VxHGlpaUm43AsvvCBLliwx/roEIGPMlhGACAoCEClzdwCePHlSHMeRjo6OhMstW7ZM5s+f7/l1YrGYdHV1xReNRglAxpgVIwARFAQgUsYrAK9cuZJwuddee02qqqo8v04kEhHHcVwjABljQR8BiKAgAJEyD+ufgPkvgIwxW0cAIigIQKSM10kgW7ZsiX+su7t7YJwEok2LQkKRsVCNAERQEIDoVzdu3JDW1lZpbW0Vx3Fk27Zt0traKpcvXxaRf/wamLy8PNm3b5+0tbXJ4sWLB+6vgSEAGQv9CEAEBQGIfvXpp5+q/79ebW2tiHz3i6Dz8/Nl0KBBMmfOHGlra/N1HQQgY8yWEYAICgIQ1iMAGWO2jABEUBCAsB4ByBizZQQggoIAhPWsCUDTaVE4eY176b6djDHfIwARFAQgrEcAMsZsGQGIoCAAYT0CkDFmywhABAUBCOsRgIwxW0YAIigIQFiPAGSM2TICEEFBAMJ6Ay4AtWlR+MO1ZjM9+5gzkJmNs+x1TAAiKAhAWI8AJABZiGfZ65gARFAQgLAeAUgAshDPstcxAYigIABhPQKQAGQhnmWvYwIQQUEAwnoEIAHIQjzLXscEIIKCAIT14gH4+CqpmvBWeGYYhfOn/kHfdPdSciBO5oDt9Vik64BuelvS/VoJ0m182M+B6Vnzpq+7fr7PBCCCggCE9QhAApAAfAgRls7rJgCBlCMAYT0CkAAkAB9ChKXzuglAIOUIQFiPACQACcCHEGHpvG4CEEg5AhDWIwAJQALwIURYOq+bAARSjgCE9UIbgKbTDoaT10jljIh7M81mfGA3Peg+tc49P/GQ7seYpWaGUaj+cKN9H5i+7h7iyh9fRQAiEAhAWI8AvM8IQDZQRgACDw0BCOsRgPcZAcgGyghA4KEhAGE9AvA+IwDZQBkBCDw0BCCsRwDeZwQgGygjAIGHhgCE9XoDsKJopSx47Lf33uNvuGd6OT+73+3wu2Su1+uyT7zpmnZAfPZf33HtmZf+7Fr5T//omnYA1K53/o82uKbdFz8HWvX+Pb3evWTiQ4kK7bHWQli7fQueeFP/fO3+PezXZ398ruFl1ccniftn+kNC+bN/dM3re9D4dXef21ZR3EgAIhAIQFiPACQACUACkAAE/CEAYT0CkAAkAAlAAhDwhwCE9QhAApAAJAAJQMAfAhDWIwAJQAKQACQAAX8IQFiPACQACUACkAAE/CEAYb14AObXyYKxjf5XsDK5Pch13uu6U3E5H9OicNaid117cvNW14r/513XtM/VrmNB8evu+Qlk5b5UPPPfrqnXrT0WhatcU3/NjTYtFLweb+X9nNX7bHgb1Wmf+4Mm95K5Dh/Xrf6KFh+Pmcl90d4Pu/LH/+Wa+jj8oEm/jUpoqj949HktlD+5mgBEIBCAsB4BSAASgAQgAQj4QwDCegQgAUgAEoAEIOAPAQjrEYAEIAFIABKAgD8EIKxHABKABCABSAAC/hCAsF78vYC//0upGv7r7zZimXt5Sx/+RtW51/d29C6Z60jm62mf6zXTzx+93DXtTN7xO5pdu/PNk66Nf/8d1+b87y2uqVFY/Lp+0FWel9Kyza5pYaCFdNWjDe4pj5d2+9Szj/3Eohaf2vNi+ppXHhv1dmuvbT9TXifa7Vbvn3YbtedFu3/ac6U9ruNXu+Z5X7TnSrmeKWu3udb3e6Js2u8JQAQCAQjrEYAEIAFIABKAgD8EIKxHABKABCABSAAC/hCAsB4BSAASgAQgAQj4QwDCegQgAUgAEoAEIOAPAQjrxQNwxH8k/oWdv8K9ZA5cHlPPGNSuW/v8ZG6PdpDzcbvVabdbux7D69Yem8e2vetayaHfuzb+wy2uPVetTz1zU4kF7SxgNSpMnysl7NS3EdPiQTn7uOqpdWqUVJa87Zr2XKnXrT1Xhp+rPjZJfr8Yv261ANTun3Y5Ley0s6u1y3l9nyuRqp1F/NSb21xLeA2OWUYAIhAIQFiPACQACUACkAAE/CEAYT0CkAAkAAlAAhDwhwBEv9q8ebPMnDlThg0bJqNHj5aFCxfKF198kXCZWCwmjY2NMnLkSBk6dKjU1NRINBo1vg4CkAAkAAlAAhDwhwBEv6qqqpIdO3bImTNn5NSpU/L888/L+PHj5ebNm/HL1NfXy7hx4+Tw4cPS0tIipaWlMn36dLl9+7bRdRCABCABSAASgIA/BCBS6urVq+I4jhw/flxERDo7OyUrK0t2794dv0xHR4dkZGTIoUOHjL5m/K3gilYmHhy0s0WVv/CTnvY2ZNoZldpZiNpB1+tMV4MzXz3fKk2bdvBT3trK+HYrj4P6VlnKfdEOpNpZwJM2bFOnhp3pY6Y9p4bPi/p4aWf8mj6Gj/1Wvaz6OGqfq7xdmfr6NHz+jB8vPzP9mtrjbRhx2nWoZ3trt8X0+6/4damcEXFt/j//p3t9rrPsh28RgAgEAhApdeHCBXEcR9ra2kRE5OjRo+I4jly7di3hctOmTZMNGzYYfU0CkAAkAAlAAhDwhwBEyvT09EhNTY3Mnj07/rGdO3dKdna267KVlZVSV1enfp1YLCZdXV3xRaNRApAAJAAJQAIQ8IEARMqsWLFCioqKEk7w8ArAiooKWb58ufp1IpGIOI7jGgFIABKABCABCJghAJESjY2NUlhYKJcuXUr4+IP8EzD/BZAAJAAJQAIQSA4BiH7V09MjK1eulLFjx8qXX37p+vPek0D27NkT/9iVK1ce7CSQx36T+Be56QFNu5zH1AO54fWoBy/tcobXocaHFgDafX7iTeNY0G63et3atM81DBztclooVv74v9QA1M68TeY1oT1eprdbuy3lP/2jOi1UknndmT736pnK2mvWx/dLMt9v6uOYxO0x/r7SXrNe36uG3299r7P88VUEIAKBAES/amhokLy8PDl27Jh888038X377bfxy9TX10thYaEcOXJEWlpapKys7IF+DQwBSAASgAQgAQiYIQDRr7T/V89xHNmxY0f8Mrdu3ZLGxkYZMWKEDBkyRKqrq6W9vd34OghAApAAJAAJQMAfAhDWIwAJQAKQACQAAX8IQFiPACQACUACkAAE/CEAYT3PAEwy9rRpZ/ipB1PtYKMdGLS3AzMMO/Vy2hmo2ud6HagM74v6Fmba13vIEeZ5cNceR9PIUR5H0zA3jQot6ipnRtSZxqxxfJpeTntOk4hMPz/MGAdgEl/P+Dq0x9pjD3KdFcWNBCACgQCE9QhAApAAJAAJQMAfAhDWIwAJQAKQACQAAX8IQFiPACQACUACkAAE/CEAYT0CkAAkAAlAAhDwhwCE9eIBePdbwWl/AReucu8HTe6NbVSnHbC1r1nxk7dd065HPbAoB2ItPLXrVUNIi8Kn1+sHRC2alDMiS1551zXtrbLmT/+Da8YBYfo2aRPe0p8vw7fE0+6zerax8tyrby+mvZ60153HZte845r2NbVQVF8nBStdK3/2j66Zvh2b+jh63R/teTH9mtprQrsO5f6p054X0/tc/Lr+2GpvV3efH0bKJ7xOACIQCEBYjwAkAAlAApAABPwhAGE9ApAAJAAJQAIQ8IcAhPUIQAKQACQACUDAHwIQ1iMACUACkAAkAAF/CEBYrzcAyx99TaryV3w37axGLcL6fk7vhv9anRpNyuc/9/wW17SDUlXeUve0t6LSzkDUDl6m0Vu4SqoebXBv9HL3lOCasXSra9rjoAaSdmA3PIh7nTlbNWKZe9r9U27jMy/92bVZL7s3s3ara8/+7B3XTJ8X9fY92iClpZtdq5wRca/kbdfK5mxyTXvNa4GrvuZH1bmmvo49vl+0+6dFofr8Kc+V+jo2/f7V7otyW7TX7Pypf1B/iCp7bqNr6lnXff4OKp/8BgGIQCAAYT0CkAAkAAlAAhDwhwCE9QhAApAAJAAJQMAfAhDWIwAJQAKQACQAAX8IQFiPACQACUACkAAE/CEAYb14AE55M/EvaOUvYu3gqp71p50x6HU2p3a2sHLAVt8qSzmoqGfOamdTapHk4wxN9eCsXU4JUuOg0c7Y1QLC9MxeP285pl2P8kNB+eyNrmlncc9+4R3X1ODSHm8tzL0iV4szw8dHPatce/6017wSrqaB6nVftMdHfVtC7fYYnjWtndGsxqNy/9SzvZWwrix5W30O1B9GtOvu8xxV5NcRgAgEAhDWIwAJQAKQACQAAX8IQFiPACQACUACkAAE/CEAYT0CkAAkAAlAAhDwhwCE9QhAApAAJAAJQMAfAhDW8zwLWDl4aWftVWQucs0zNJQzCdUzDpWze+dW/sm1WYvedU09+ChfTzv4aG8Ppp7ZO3q5VA5+xTUtKrQzmrWvpz6O2kE36xeumb7NlnabKwe/ol+39nZeytmd6ucq8a++fZrh25ppIfTMz/+s7rnqLa4Zx7AW8MoPGdp9mf+jDa5pwfyjZVtd84oz7TWvBbf6FoTKmcHac/WTxe+6Zvq2i/PK/+SaGuuPvyHzv/cr1yqz/9095fXd97VaOuhlAhCBQADCegQgAUgAEoAEIOAPAQjrEYAEIAFIABKAgD8EIKxHABKABCABSAAC/hCAsB4BSAASgAQgAQj4QwDCevEA/P4vEyJMezsv9UClRIp2pmNp6Wb14K4dxLUDmnZg+OflW11TD8SGZ7nOrnnHtfKf/lGfciDW3hZNO+hqcV3xyM9d0263dmD381ZppjMNafUt7HKWuKa+5Zj2Fn2GZ49PbdqmTjsDef6wWte01+38Ia+6VpHxkmvamebq259pz5XyPaA99xWP/Fw/K1mJSu3+aWfxa/dFO+NeDTvtBzrl9mnXUZHxkvyv/9jqmnrmtPLDUd/XQsW4egIQgUAAwnoEIAFIABKABCDgDwEI6xGABCABSAASgIA/BCCsRwASgAQgAUgAAv4QgLAeAUgAEoAEIAEI+EMAwnoEIAFIABKABCDgDwEI68UD8MnV+gGn75RQ0H41jPqeuo/9Vj0gPvuzd1yb3rDVNe09WU3jUX3PYO2ArXyudvue/dk7Ulq22TXt4Kz+Sg3tV8socaXGkHbQVK5XjQ+PXzeiPmZKQKifq1yP9jpR31tYeV7Uyym/Pkj7lT0Vz/y3/vla5Hr8eh/XDCNcDRftV6Joz4HX94vpdWuX097D2PD1pP0Qpc3rV75o+/Gr77qmvgey9vj0+fOKMcsIQAQCAQjrEYAEIAFIABKAgD8EIKxHABKABCABSAAC/hCAsB4BSAASgAQgAQj4QwDCegQgAUgAEoAEIOAPAQjrxQNw8huJ4eJxUHIdpJQDjVdAamccqmc1KmdZqiFlGFzae+VqAadeh3b/frhWPVCpt1t7z1nloKu+L672ucrBVT3zVbst2vWOX61+Te0sYO3x0Z5T9XHUYk8LSu3MYC0qtJj5QZN+xrf22Ho9FibTvp4y9YcELdaU2K6a+Dv1hxTT92jW3utafcwMX2Pq86c9Nl7Pi/YDhfa43SdSKwobCEAEAgEI6xGABCABSAASgIA/BCCsRwASgAQgAUgAAv4QgOhX7733nkydOlVyc3MlNzdXZs2aJQcPHoz/eSwWk8bGRhk5cqQMHTpUampqJBqN+roOApAAJAAJQAIQ8IcARL/6+OOP5cCBA3L+/Hk5f/68rFu3TrKysuTMmTMiIlJfXy/jxo2Tw4cPS0tLi5SWlsr06dPl9u3bxtdBABKABCABSAAC/hCASLnhw4fLhx9+KJ2dnZKVlSW7d++O/1lHR4dkZGTIoUOHjL9ebwCWTf1dYiRpAaEdiJWDgHqQm/CWGpCmBzk1DLSDl/aWVdpZslrUaQc0r6+r3BftLeNM35rOOAy0M5qV50o9YPs521T5fNMzrNXbrYW08rxo4aLN80x17faYRqX2+CQR6+rzot0WH2Fu/IOZ8lwl9cOIaUT7uewDPN4V41cQgAgEAhApc/v2bdm1a5dkZ2fL2bNn5ejRo+I4jly7di3hctOmTZMNGzZ4fp1YLCZdXV3xRaNRApAAJAAJQAIQ8IEARL87ffq05OTkSGZmpuTl5cmBAwdERGTnzp2SnZ3tunxlZaXU1dV5fr1IJCKO47hGABKABCABSAACZghA9Lvu7m65cOGCfP7557JmzRoZNWqUnD171jMAKyoqZPny5Z5fj/8CSAASgAQgAQgkhwBEypWXl0tdXd0D/xPw3fh/AAlAApAAJAABfwhApFxZWZnU1tbGTwLZs2dP/M+uXLnywCeBVDz2m/tGk3FweQWgdlktxLTLeZwp6Tqz0PA6TK/X1wwPxOrjYxi46uNqGAqej5sWUqaPt2GQqGeWGl6H8WPoEc3GtyeZMDeNY9Ov5+exMA1hw9edcfxrP1h5hbn2Pad9zftcrnzC6wQgAoEARL9au3atnDhxQr766is5ffq0rFu3TjIyMuSTTz4RkX/8GpjCwkI5cuSItLS0SFlZ2QP/GhgCkAAkAAlAAhAwQwCiXy1dulSKiookOztbRo8eLeXl5fH4ExG5deuWNDY2yogRI2TIkCFSXV0t7e3tvq6DACQACUACkAAE/CEAYT0CkAAkAAlAAhDwhwCE9QhAApAAJAAJQMAfAhDWiwdgcWPiAVELHC00tHkFknbQNT2gaQcbbckEjp8Q0oJNCw3tcdDOkkwipIxj1EeYGz/XpmeqGt5G4/vscVnj+2f6w4z23GuR4hU+JvP6ocQ0upK4nHamsvbWidrXU89y9vq+1KJSO6Nd+a0Afb9O+eQ3CEAEAgEI6xGABCABSAASgIA/BCCsRwASgAQgAUgAAv4QgLAeAUgAEoAEIAEI+EMAwnqdnZ3iOI7MG18nFcWN3+2x37jX98/vNe1zPT6/fMLr7j252r3Jb5jtiSb3tK+XzOU8LltRtNI97XEYv8I97XO1mT7eyueWP75KXVLPtTbTxyGZ++xxWeP7Zzj1uZ/0W/e0147ptK836bf694b2mk/icmVPv+Xe1N+5pn097XM9vy+nvGm0sh++5VrfrzN3QqM4jiOdnZ3p/qsTIUcAwnq97wXMGGO2LBqNpvuvToQcAQjr3blzR6LRqLS3t8f/Yu3q6rJ6vVHLfQnWuC/BnE33pbOzU6LRqNy5cyfdf3Ui5AhADBhdXf/4fwG7uuz/f2u4L8HEfQmmgXRfgFQhADFgDKSDAPclmLgvwTSQ7guQKgQgBoyBdBDgvgQT9yWYBtJ9AVKFAMSAEYvFJBKJSCwWS/dNSRr3JZi4L8E0kO4LkCoEIAAAQMgQgAAAACFDAAIAAIQMAQgAABAyBCAAAEDIEIAYMLZv3y7FxcUyaNAgmTFjhpw4cSLdN+m+jh8/LtXV1VJQUCCO48j+/fsT/rynp0cikYgUFBTI4MGDZe7cuXLmzJk03VpvmzdvlpkzZ8qwYcNk9OjRsnDhQvniiy8SLhOLxaSxsVFGjhwpQ4cOlZqamkC+HdZ7770nU6dOldzcXMnNzZVZs2bJwYMH439uy/3QbN68WRzHkaampvjHbLk/kUjE9XZqY8aMif+5Ld8rQFAQgBgQdu/eLVlZWfLBBx/IuXPnpKmpSXJycuTy5cvpvmn3dPDgQVm/fr3s3btXDcDm5mbJzc2VvXv3SltbmyxatEgKCgrk+vXrabrFuqqqKtmxY4ecOXNGTp06Jc8//7yMHz9ebt68Gb9MfX29jBs3Tg4fPiwtLS1SWloq06dPl9u3b6fxlrt9/PHHcuDAATl//rycP39e1q1bJ1lZWfGYsOV+3O1vf/ubFBcXy7Rp0xIC0Jb7E4lE5KmnnpJvvvkmvqtXr8b/3JbvFSAoCEAMCCUlJVJfX5/wscmTJ8uaNWvSdIv8uzsAe3p6JD8/X5qbm+Mfi8VikpeXJ++//346bqKxq1eviuM4cvz4cRER6ezslKysLNm9e3f8Mh0dHZKRkSGHDh1K1800Nnz4cPnwww+tvR83btyQCRMmyOHDh2Xu3LnxALTp/kQiEZk+fbr6ZzZ/rwDpQgDCet3d3ZKZmSn79u1L+PiqVatkzpw5abpV/t0dgBcvXhTHcaSlpSXhci+88IIsWbIk1TfPlwsXLojjONLW1iYiIkePHhXHceTatWsJl5s2bZps2LAhHTfRyO3bt2XXrl2SnZ0tZ8+etfZ+LFmyRFavXi0ikhCANt2fSCQiQ4cOlYKCAikuLpZFixbJxYsXRcTu7xUgXQhAWK+jo0Mcx5GTJ08mfHzTpk0yceLENN0q/+4OwJMnT4rjONLR0ZFwuWXLlsn8+fNTffOM9fT0SE1NjcyePTv+sZ07d0p2drbrspWVlVJXV5fKm2fk9OnTkpOTI5mZmZKXlycHDhwQEfvuh4jIrl275Omnn5Zbt26JSGIA2nR/Dh48KH/5y1/k9OnT8f+SOWbMGPn73/9u7fcKkE4EIKzXG4CfffZZwsc3btwokyZNStOt8s8rAK9cuZJwuddee02qqqpSffOMrVixQoqKihJOJPAKjYqKClm+fHkqb56R7u5uuXDhgnz++eeyZs0aGTVqlJw9e9a6+9He3i6PPvqonDp1Kv4xkwAM6v3p6+bNmzJmzBjZunWrtd8rQDoRgLAe/wQcHI2NjVJYWCiXLl1K+LhN/9SoKS8vl7q6Ouvux/79+8VxHMnMzIzPcRx55JFHJDMzU44cOWLV/blbRUWF1NfXW/m9AqQbAYgBoaSkRBoaGhI+NmXKlAFxEsiWLVviH+vu7g7k/9je09MjK1eulLFjx8qXX37p+vPekw327NkT/9iVK1cCebKBpqysTGpra627H9evX5e2traEzZw5U1599VVpa2uz7v70FYvFZNy4cfL2229b9b0CBAUBiAGh99fAfPTRR3Lu3DlZvXq15OTkyNdff53um3ZPN27ckNbWVmltbRXHcWTbtm3S2toa//U1zc3NkpeXJ/v27ZO2tjZZvHhxIH+1RUNDg+Tl5cmxY8cSfk3Ht99+G79MfX29FBYWypEjR6SlpUXKysoC+etG1q5dKydOnJCvvvpKTp8+LevWrZOMjAz55JNPRMSe++Gl7z8Bi9hzf9544w05duyYXLp0Sf76179KdXW15Obmxr/HbfleAYKCAMSAsX37dikqKpLs7GyZMWNG/FeQBNmnn37q+uW2juNIbW2tiHz3y23z8/Nl0KBBMmfOnPiZtUGi3QfHcWTHjh3xy9y6dUsaGxtlxIgRMmTIEKmurpb29vb03WgPS5cujb+ORo8eLeXl5fH4E7Hnfni5OwBtuT+9v9cvKytLxo4dKy+++KKcPXs2/ue2fK8AQUEAAgAAhAwBVo5RwAAAAMdJREFUCAAAEDIEIAAAQMgQgAAAACFDAAIAAIQMAQgAABAyBCAAAEDIEIAAAAAhQwACAACEDAEIAAAQMgQgAABAyBCAAAAAIUMAAgAAhAwBCAAAEDIEIAAAQMgQgAAAACFDAAIAAIQMAQgAABAyBCAAAEDIEIAAAAAhQwACAACEDAEIAAAQMgQgAABAyBCAAAAAIUMAAgAAhAwBCAAAEDIEIAAAQMgQgAAAACFDAAIAAIQMAQgAABAyBCAAAEDIEIAAAAAh8/8AUQ+05w7kgh0AAAAASUVORK5CYII=" width="640">
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[241]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.image.AxesImage at 0x7fe030267410&gt;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[242]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Now let&#39;s reshape the spectrograms into the required 1d shape, and see what the network predicts !! </span>
@@ -14454,7 +13655,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[243]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">probs</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">manyclips_for_input</span><span class="p">)</span>
@@ -14469,14 +13670,14 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="And-so-...-here's-the-final-flourish,-it-looks-like-this-quick-and-dirty-network-is-actually-capable-of-detecting-real-bat-calls.-Kind-of-encouraging-!">And so ... here's the final flourish, it looks like this quick-and-dirty network is actually capable of detecting real bat calls. Kind of encouraging !<a class="anchor-link" href="#And-so-...-here's-the-final-flourish,-it-looks-like-this-quick-and-dirty-network-is-actually-capable-of-detecting-real-bat-calls.-Kind-of-encouraging-!">&#182;</a></h2><h3 id="What-was-done-:">What was done :<a class="anchor-link" href="#What-was-done-:">&#182;</a></h3><p>The 0.5 second audio recording was split into non-overlapping 10millisecond segments. The spectrograms for each of these segments were calculated with 64 sample FFT window, 32 sample overlap. This gave rise to an image-like matrix of 33 x 59 dimensions. This was fed into the pre-trained network and the prediction confidence was plotted over the spectrogram itself.</p>
+<h2 id="And-so-...-it-looks-like-this-quick-and-dirty-network-is-actually-capable-of-detecting-real-bat-calls.-Kind-of-encouraging-!">And so ... it looks like this quick-and-dirty network is actually capable of detecting real bat calls. Kind of encouraging !<a class="anchor-link" href="#And-so-...-it-looks-like-this-quick-and-dirty-network-is-actually-capable-of-detecting-real-bat-calls.-Kind-of-encouraging-!">&#182;</a></h2><h3 id="What-was-done-:">What was done :<a class="anchor-link" href="#What-was-done-:">&#182;</a></h3><p>The 0.5 second audio recording was split into non-overlapping 10millisecond segments. The spectrograms for each of these segments were calculated with 64 sample FFT window, 32 sample overlap. This gave rise to an image-like matrix of 33 x 59 dimensions. This was fed into the pre-trained network and the prediction confidence was plotted over the spectrogram itself.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[245]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
@@ -14488,7 +13689,7 @@ if (IPython.notebook.kernel != null) {
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">set_figheight</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">set_figwidth</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">specgram</span><span class="p">(</span><span class="n">part_audionorm</span><span class="p">,</span> <span class="n">Fs</span><span class="o">=</span><span class="n">fs</span><span class="p">,</span> <span class="n">NFFT</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">noverlap</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span>
+<span class="n">S</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">im</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">specgram</span><span class="p">(</span><span class="n">part_audionorm</span><span class="p">,</span> <span class="n">Fs</span><span class="o">=</span><span class="n">fs</span><span class="p">,</span> <span class="n">NFFT</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">noverlap</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">seg</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.010</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.01</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">vlines</span><span class="p">(</span><span class="n">seg</span><span class="p">,</span><span class="mi">20000</span><span class="p">,</span><span class="mi">90000</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency, Hz&#39;</span><span class="p">)</span>
@@ -14517,10 +13718,10 @@ if (IPython.notebook.kernel != null) {
 
 
 
-<div id="be849125-6b2e-4af5-bfe3-83b5bdcb26ab"></div>
+<div id="1ff8b6f8-3095-45cb-bce6-c1cc8e26ab94"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#be849125-6b2e-4af5-bfe3-83b5bdcb26ab');
+var element = $('#1ff8b6f8-3095-45cb-bce6-c1cc8e26ab94');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -15077,7 +14278,7 @@ mpl.figure.prototype.toolbar_button_onmouseover = function(tooltip) {
 };
 mpl.toolbar_items = [["Home", "Reset original view", "fa fa-home icon-home", "home"], ["Back", "Back to  previous view", "fa fa-arrow-left icon-arrow-left", "back"], ["Forward", "Forward to next view", "fa fa-arrow-right icon-arrow-right", "forward"], ["", "", "", ""], ["Pan", "Pan axes with left mouse, zoom with right", "fa fa-arrows icon-move", "pan"], ["Zoom", "Zoom to rectangle", "fa fa-square-o icon-check-empty", "zoom"], ["", "", "", ""], ["Download", "Download plot", "fa fa-floppy-o icon-save", "download"]];
 
-mpl.extensions = ["eps", "pdf", "png", "ps", "raw", "svg"];
+mpl.extensions = ["eps", "jpeg", "pdf", "png", "ps", "raw", "svg", "tif"];
 
 mpl.default_extension = "png";var comm_websocket_adapter = function(comm) {
     // Create a "websocket"-like object which calls the given IPython comm
@@ -15316,10 +14517,10 @@ if (IPython.notebook.kernel != null) {
 
 
 
-<div id="062e0f8e-b99d-4e8d-9759-08516f2bd21e"></div>
+<div id="520a4754-83b4-4430-a132-30844a29153c"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#062e0f8e-b99d-4e8d-9759-08516f2bd21e');
+var element = $('#520a4754-83b4-4430-a132-30844a29153c');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -15876,7 +15077,7 @@ mpl.figure.prototype.toolbar_button_onmouseover = function(tooltip) {
 };
 mpl.toolbar_items = [["Home", "Reset original view", "fa fa-home icon-home", "home"], ["Back", "Back to  previous view", "fa fa-arrow-left icon-arrow-left", "back"], ["Forward", "Forward to next view", "fa fa-arrow-right icon-arrow-right", "forward"], ["", "", "", ""], ["Pan", "Pan axes with left mouse, zoom with right", "fa fa-arrows icon-move", "pan"], ["Zoom", "Zoom to rectangle", "fa fa-square-o icon-check-empty", "zoom"], ["", "", "", ""], ["Download", "Download plot", "fa fa-floppy-o icon-save", "download"]];
 
-mpl.extensions = ["eps", "pdf", "png", "ps", "raw", "svg"];
+mpl.extensions = ["eps", "jpeg", "pdf", "png", "ps", "raw", "svg", "tif"];
 
 mpl.default_extension = "png";var comm_websocket_adapter = function(comm) {
     // Create a "websocket"-like object which calls the given IPython comm
@@ -16109,7 +15310,7 @@ if (IPython.notebook.kernel != null) {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[245]:</div>
+<div class="prompt output_prompt">Out[13]:</div>
 
 
 
