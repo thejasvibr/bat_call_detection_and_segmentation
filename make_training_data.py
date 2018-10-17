@@ -9,9 +9,10 @@ Created on Wed Sep 19 13:25:55 2018
 import matplotlib.pyplot as plt
 plt.rcParams['agg.path.chunksize'] = 10000
 import numpy as np 
+import os
 import scipy.signal as signal 
 import scipy.io.wavfile as WAV
-
+import uuid
 
 def generate_a_samplesound(duration,fs=192000, shape='linear',
                           window='tukey', freqs=[90000, 20000], SNR=15,
@@ -185,6 +186,38 @@ mean_subtract = lambda X : X - np.mean(X)
 def mean_subtract_rowwise(input_array):
     row_meansubt = np.apply_along_axis(mean_subtract, 1, input_array)
     return(row_meansubt)
+
+
+
+def do_one_mask_run(make_plot=True):
+    sample = generate_a_samplesound(np.random.choice(np.arange(0.001,0.010),1),
+                                           shape=np.random.choice(['linear', 'logarithmic'],1)[0],
+                                           SNR=np.random.choice(np.arange(5,50), 1))
+    # use a custom-modified version of signal.spectrogram, which does not normalise the individual FFT segments 
+    # according to the entire spectrogram
+    f, t, Sxx = signal.spectrogram(sample, fs=192000, window=('tukey',0.01), nperseg=32, noverlap=0, scaling='none' )
+    Sxx = np.flipud(Sxx)
+    # band-mean subtract to get rid of noise 
+    Sxx_bandmean = mean_subtract_rowwise(Sxx)
+    # calculate mask based on the highest 'pixel' values
+    mask = np.zeros(Sxx.shape)
+    thresh = np.percentile(Sxx_bandmean.flatten(), 99)
+    mask[Sxx_bandmean>=thresh] = 1 
+    
+    if make_plot:
+        # make the diagnostic plot
+        plt.figure(figsize=(8,5))
+        plt.subplot(311)
+        plt.plot(sample)
+        plt.subplot(312)
+        plt.imshow(Sxx_bandmean, aspect='auto', cmap='Greys')
+        plt.subplot(313)
+        plt.imshow(mask, aspect='auto', cmap='Greys')
+    # generate a unique if for this particular file number 
+    # thanks https://tinyurl.com/yclfd5st for multiprocessing adjustment tip
+    unique_id = str(uuid.UUID(bytes=os.urandom(16), version=4))
+
+    return(sample, Sxx, mask, unique_id)
 
 
 
